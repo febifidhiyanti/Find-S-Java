@@ -7,8 +7,8 @@ import java.util.ArrayList;
 public class Main {
 
     /**
-     * trainingDataAttributes merupakan data training untuk mencari hipotesa data
-     * testingDataAttributes merupakan data testing untuk mencari kesimpulan
+     * trainingDataAttributes = data training untuk mencari hipotesa data
+     * testingDataAttributes = data testing untuk mencari kesimpulan
      * berdasarkan
      * hipotesa yang ditemukan
      */
@@ -22,11 +22,11 @@ public class Main {
     /**
      * TRAINING_DATA_FILES merupakan lokasi data training
      */
-    private static final String TRAINING_DATA_FILES = "D:\\KAMPUS\\PENS\\SEMESTER-2\\4_PRAKTIKUM-MESIN-PEMBELAJARAN_PAK-ROSYID\\MINGGU-2\\TUGAS\\Find_S\\data\\Training.csv";
+    private static final String TRAINING_DATA_FILES = "D:\\KAMPUS\\PENS\\SEMESTER-2\\4_PRAKTIKUM-MESIN-PEMBELAJARAN_PAK-ROSYID\\MINGGU-2\\TUGAS\\Find_S\\data\\Data-Training.xlsx";
     /**
      * TESTING_DATA_FILES merupakan lokasi data testing
      */
-    private static final String TESTING_DATA_FILES = "D:\\KAMPUS\\PENS\\SEMESTER-2\\4_PRAKTIKUM-MESIN-PEMBELAJARAN_PAK-ROSYID\\MINGGU-2\\TUGAS\\Find_S\\data\\Testing.csv";
+    private static final String TESTING_DATA_FILES = "D:\\KAMPUS\\PENS\\SEMESTER-2\\4_PRAKTIKUM-MESIN-PEMBELAJARAN_PAK-ROSYID\\MINGGU-2\\TUGAS\\Find_S\\data\\Testing.xlsx";
 
     /**
      * Merupakan method main yang dijalankan saat program di jalankan
@@ -40,8 +40,8 @@ public class Main {
         trainingDataAttributes = setData(TRAINING_DATA_FILES);
         testingDataAttributes = setData(TESTING_DATA_FILES);
 
-        getHypotesis("Yes");
-        // getHypotesis("No");
+        // getHypotesis("Yes");
+        getHypotesis("No");
 
         testHypotesis();
     }
