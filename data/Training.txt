@@ -1,0 +1,11 @@
+Perempuan Single Galau Freelance Yes
+Perempuan Single Galau Pegawai Bank Yes
+Perempuan Single Galau Guru Yes
+Laki-laki Menikah Bahagia Pegawai Bank No
+Laki-laki Single Galau Freelance No
+Perempuan Menikah Bahagia Pegawai Bank Yes
+Perempuan Menikah Bahagia Freelance Yes
+Perempuan Single Galau Freelance Yes
+Laki-laki Single Bahagia Freelance No
+Perempuan Menikah Galau Freelance Yes
+Perempuan Menikah Galau Pegawai Bank Yes
