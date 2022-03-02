@@ -1,5 +1,3 @@
-package finds;
-
 import java.io.*;
 import java.util.ArrayList;
 
@@ -24,12 +22,11 @@ public class Main {
     /**
      * TRAINING_DATA_FILES merupakan lokasi data training
      */
-    private static final String TRAINING_DATA_FILES = "C:\\Users\\user\\Downloads\\Simple-Machine-Learning-Find-S-Java-Application-master\\data\\Training.txt";
-
+    private static final String TRAINING_DATA_FILES = "D:\\KAMPUS\\PENS\\SEMESTER-2\\4_PRAKTIKUM-MESIN-PEMBELAJARAN_PAK-ROSYID\\MINGGU-2\\TUGAS\\Find_S\\data\\Training.csv";
     /**
      * TESTING_DATA_FILES merupakan lokasi data testing
      */
-    private static final String TESTING_DATA_FILES = "C:\\Users\\user\\Downloads\\Simple-Machine-Learning-Find-S-Java-Application-master\\data\\Testing.txt";
+    private static final String TESTING_DATA_FILES = "D:\\KAMPUS\\PENS\\SEMESTER-2\\4_PRAKTIKUM-MESIN-PEMBELAJARAN_PAK-ROSYID\\MINGGU-2\\TUGAS\\Find_S\\data\\Testing.csv";
 
     /**
      * Merupakan method main yang dijalankan saat program di jalankan
@@ -62,16 +59,15 @@ public class Main {
         String[][] attributes = null; // Array of string yang akan dikembalikan
 
         try {
+
             File file = new File(filePath); // Membuat object file dari file yang diinginkan
-            BufferedReader data = new BufferedReader(new FileReader(file)); // Membuat object untuk membaca file
+            BufferedReader Tr = new BufferedReader(new FileReader(file)); // Membuat object untuk membaca file
             String str = "";
 
-            /*
-             * Looping untuk membaca keseluruhan isi file
-             */
-            while (str != null) {
-                str = data.readLine(); // Mengambil setiap baris file
+            // Looping untuk membaca keseluruhan isi file
 
+            while (str != null) {
+                str = Tr.readLine(); // Mengambil setiap baris file
                 if (str != null) // Jika baris ada
                     resultList.add(str.split(" ")); // Memisahkan setiap kata menurut spasi (" ")
             }
